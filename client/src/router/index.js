@@ -17,6 +17,11 @@ export const constantRouterMap = [
         path: "dashboard",
         component: () => import("@/views/dashboard/index"),
         name: "dashboard"
+      },
+      {
+        path: "height-problem",
+        component: () => import("@/views/heightProblem/index"),
+        name: "height.problem"
       }
     ]
   },
