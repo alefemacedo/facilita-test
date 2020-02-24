@@ -1,5 +1,5 @@
 <template>
-  <div class="library--create">
+  <div class="container library--create">
     <div class="library--create_title">
       <h3 class="display-4">
         Cadastrar Empréstimo
