@@ -44,5 +44,8 @@ Prova prática de desenvolvedor PHP da Facilita
 - cp .env.example .env
 - Configure dentro do arquivo .env os dados necessários para conexão com o banco de dados
 
+### Executar as migrations
+- php artisan migrate
+
 ### Rode o servidor PHP
 - php -S localhost:8080 -t public/
