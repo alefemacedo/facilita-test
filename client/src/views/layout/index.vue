@@ -12,6 +12,7 @@
           <b-navbar-nav>
             <b-nav-item to="/">Home</b-nav-item>
             <b-nav-item to="/height-problem">Problema da Altura</b-nav-item>
+            <b-nav-item to="/fibonacci-problem">Problema Fibonacci</b-nav-item>
             <b-nav-item-dropdown right>
               <template v-slot:button-content>
                 Biblioteca
