@@ -14,10 +14,10 @@
             <b-nav-item to="/height-problem">Problema da Altura</b-nav-item>
             <b-nav-item-dropdown right>
               <template v-slot:button-content>
-                Empresas
+                Biblioteca
               </template>
-              <b-dropdown-item to="/company">Listar</b-dropdown-item>
-              <b-dropdown-item to="/company/create">Cadastrar</b-dropdown-item>
+              <b-dropdown-item to="/library">Listar Recibos</b-dropdown-item>
+              <b-dropdown-item to="/library/create">Cadastrar Empréstimo</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>

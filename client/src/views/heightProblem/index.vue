@@ -1,9 +1,9 @@
 <template>
   <div class="height--problem container">
     <div class="height--problem_title">
-      <h1 class="display-4">
+      <h3 class="display-4">
         Juca ultrapassa João
-      </h1>
+      </h3>
     </div>
 
     <div class="height--problem_form">
