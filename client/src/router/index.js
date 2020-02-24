@@ -45,6 +45,11 @@ export const constantRouterMap = [
             name: "library.show"
           }
         ]
+      },
+      {
+        path: "fibonacci-problem",
+        component: () => import("@/views/fibonacciProblem/index"),
+        name: "fibonacci.problem"
       }
     ]
   },
