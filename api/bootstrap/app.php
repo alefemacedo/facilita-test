@@ -21,9 +21,11 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-// $app->withFacades();
+// Habilita o uso de Facades como DB
+$app->withFacades();
 
-// $app->withEloquent();
+// Habilita o uso do Eloquent ORM
+$app->withEloquent();
 
 /*
 |--------------------------------------------------------------------------
@@ -57,13 +59,15 @@ $app->singleton(
 |
 */
 
-// $app->middleware([
-//     App\Http\Middleware\ExampleMiddleware::class
-// ]);
+$app->middleware([
+    // Middleware que soluciona o problema de cors em requisições de dominios diferentes.
+    App\Http\Middleware\CorsMiddleware::class
+ ]);
 
-// $app->routeMiddleware([
+$app->routeMiddleware([
 //     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+    'cors' => App\Http\Middleware\CorsMiddleware::class,
+]);
 
 /*
 |--------------------------------------------------------------------------
@@ -96,5 +100,7 @@ $app->router->group([
 ], function ($router) {
     require __DIR__.'/../routes/web.php';
 });
+
+app('translator')->setLocale('pt-BR');
 
 return $app;

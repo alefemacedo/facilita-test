@@ -1,5 +1,4 @@
 import axios from "axios"
-import router from "../router/"
 
 // cria uma instância axios para requisições
 const service = axios.create({
